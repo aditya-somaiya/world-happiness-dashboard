@@ -1,0 +1,52 @@
+.column-selector {
+    position: relative;
+    user-select: none;
+    max-width: 300px; /* Set the maximum width for the selector */
+    min-width: 200px;
+  }
+  
+  .menu-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #2a6280;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%; /* Ensure the button spans the full width of its container */
+  }
+  
+  .menu-list {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    width: 100%; /* Match the width to the parent to align with the button */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: gray;
+    max-width: 100%; /* Ensure the list does not exceed the parent width */
+    overflow-y: auto; /* Allows vertical scrolling */
+  }
+  
+  .menu-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    text-align: left;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow-x: hidden; /* Hides horizontal overflow */
+    color: black !important; /* Ensuring text color */
+  }
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-item:hover {
+    background-color: lightgray;
+  }
+  

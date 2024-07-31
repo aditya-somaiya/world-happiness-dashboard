@@ -1,0 +1,70 @@
+html {
+    background-color: azure;
+}
+h4, .h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.app-container {
+    width: 100%;
+  }
+  
+  .component {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100; /* Adjust accordingly */
+    min-height: 300px; /* Adjust if more height is needed */
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px; /* Reset the font size */
+  }
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+  }
+  
+  .title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Clearfix may still be needed depending on other factors */
+  .app-container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .radar-chart-container text {
+    font-weight: bold;
+    fill: black; /* SVG text color is controlled with fill */
+  }
+
+
+
+  .legend {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    margin-bottom: 20px; /* Add some bottom margin if needed */
+    align-items: center; /* Align items vertically in the center */
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px; /* Space between legend items */
+  }
+  
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Space between color box and label text */
+  }
+  
